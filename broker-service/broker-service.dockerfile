@@ -5,7 +5,7 @@ FROM golang:1.18-alpine as builder
 RUN mkdir /app
 
 # copy all files from the current directory to the app directory
-COPY broker-service/. /app
+COPY . /app
 
 # set working directory
 WORKDIR /app
